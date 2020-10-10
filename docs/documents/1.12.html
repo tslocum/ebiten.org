@@ -45,8 +45,10 @@
         <li lang="ja"><a href="/">ホーム</a></li>
         <li lang="en"><a href="https://github.com/hajimehoshi/ebiten">GitHub project</a></li>
         <li lang="ja"><a href="https://github.com/hajimehoshi/ebiten">GitHub プロジェクト</a></li>
-        <li lang="en"><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten">API reference</a></li>
-        <li lang="ja"><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten">API リファレンス</a></li>
+        <li lang="en"><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten/v2">API reference (v2)</a></li>
+        <li lang="ja"><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten/v2">API リファレンス (v2)</a></li>
+        <li lang="en"><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten">API reference (v1)</a></li>
+        <li lang="ja"><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten">API リファレンス (v1)</a></li>
         <li lang="en"><a href="/tour/">Tour (WIP)</a></li>
         <li lang="ja"><a href="/tour/">ツアー (未完成)</a></li>
         <li lang="en"><a href="/documents/">Documents</a></li>
@@ -78,6 +80,7 @@
 <h3 lang="en">Release Notes</h2>
 <h3 lang="ja">リリースノート</h2>
 <ul>
+  <li><a href="./2.0.html">2.0</a></li>
   <li><a href="./1.12.html">1.12</a></li>
   <li><a href="./1.11.html">1.11</a></li>
 </ul>
@@ -189,6 +192,16 @@
   <li lang="ja">メインループ前の <code>ebiten.SetVsyncEnabled(false)</code> が macOS で動かなかった問題の修正 (<a href="https://github.com/hajimehoshi/ebiten/issues/1364">Issue 1364</a>).</li>
   <li lang="en">Rare crash at <code>audio.NewContext</code> on macOS and iOS (<a href="https://github.com/hajimehoshi/ebiten/issues/1386">Issue 1386</a>).</li>
   <li lang="ja"><code>audio.NewContext</code> が macOS と iOS で稀にクラッシュする問題の修正 (<a href="https://github.com/hajimehoshi/ebiten/issues/1386">Issue 1386</a>)。</li>
+</ul>
+<h2>v1.12.3</h2>
+<p><a href="https://github.com/hajimehoshi/ebiten/milestone/51?closed=1">Issues for v1.12.3</a></p>
+<h3 lang="en">Bug fix</h3>
+<h3 lang="ja">バグ修正</h3>
+<ul>
+  <li lang="en">Drawing images with extreme scaling caused infinite loop (<a href="https://github.com/hajimehoshi/ebiten/issues/1398">Issue 1398</a>).</li>
+  <li lang="ja">極端なスケールで描画すると無限ループする問題の修正 (<a href="https://github.com/hajimehoshi/ebiten/issues/1398">Issue 1398</a>)。</li>
+  <li lang="en">Crash when Ebiten tries to create a too big images for mipmap (<a href="https://github.com/hajimehoshi/ebiten/issues/1399">Issue 1399</a>).</li>
+  <li lang="ja">大きすぎるミップマップ画像を作成しようとしてクラッシュする問題の修正 (<a href="https://github.com/hajimehoshi/ebiten/issues/1399">Issue 1399</a>)。</li>
 </ul>
 
       </article>
